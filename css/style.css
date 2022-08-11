@@ -150,27 +150,29 @@ img {
     -webkit-transition: all .3s;
     transition: all .3s;
   }
-  /*增加 class open 觸發選單*/
-  .open .main {
-    -webkit-transform: translateX(270px);
-    transform: translateX(270px);
-  }
-  .open .aside {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-  }
-  .open .aside .menu li {
+  .aside .menu li {
     margin: 1rem;
     background: rgba(90, 127, 170, 0.859);
   }
-  .open .aside .menu li a {
+  .aside .menu li a {
     display: block;
     padding: 1rem;
     color: #fff;
     text-decoration: none;
   }
-  .open .aside .menu li a:hover {
+  .aside .menu li a:hover {
     background: rgba(128, 180, 238, 0.859);
+  }
+  /*增加 class open 觸發選單*/
+  .open .main {
+    -webkit-transform: translateX(270px);
+    transform: translateX(270px);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .open .aside {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 /*# sourceMappingURL=style.css.map */

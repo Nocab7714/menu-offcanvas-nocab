@@ -147,25 +147,6 @@ img{
 		-webkit-transform: translateX(-270px);
 		transform: translateX(-270px);
 		transition: all .3s;
-	}
-
-/*增加 class open 觸發選單*/
-
-
-.open{
-
-	.main{
-		// 讓 .main 移至右側騰出 .aside 的空間
-		-webkit-transform: translateX(270px);
-		transform: translateX(270px);
-		
-	}
-
-	
-	.aside{
-		// 將 .aside 的區塊移動回來
-		-webkit-transform: translateX(0px);
-		transform: translateX(0px);
 
 		.menu li{
 			margin: 1rem;
@@ -180,6 +161,28 @@ img{
 		.menu li a:hover{
 			background: rgba(128, 180, 238, 0.859);
 		}
+	}
+
+/*增加 class open 觸發選單*/
+
+
+.open{
+
+	.main{
+		// 讓 .main 移至右側騰出 .aside 的空間
+		-webkit-transform: translateX(270px);
+		transform: translateX(270px);
+		transition: all .3s;
+		
+	}
+
+	
+	.aside{
+		// 將 .aside 的區塊移動回來
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+
+
 
 	}
 }
