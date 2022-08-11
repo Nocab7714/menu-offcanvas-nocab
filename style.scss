@@ -72,7 +72,8 @@ img{
 	padding: 5px;
 	display: inline-block;
 	margin: .3em;
-	text-decoration: none;
+	text-decoration: none;	
+
 	&:hover{
 		background: rgb(110, 145, 234);			
 	}
@@ -117,6 +118,10 @@ img{
 
 //   RWD mobile 768px 設定
   @media(max-width: 768px){
+
+	.main{
+		transition: all .3s;
+	}
 
 	.main .header{
 		justify-content: space-between;
@@ -171,8 +176,7 @@ img{
 	.main{
 		// 讓 .main 移至右側騰出 .aside 的空間
 		-webkit-transform: translateX(270px);
-		transform: translateX(270px);
-		transition: all .3s;
+		transform: translateX(270px);	
 		
 	}
 
@@ -181,7 +185,7 @@ img{
 		// 將 .aside 的區塊移動回來
 		-webkit-transform: translateX(0px);
 		transform: translateX(0px);
-
+		
 
 
 	}

@@ -128,6 +128,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  .main {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
   .main .header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -167,8 +171,6 @@ img {
   .open .main {
     -webkit-transform: translateX(270px);
     transform: translateX(270px);
-    -webkit-transition: all .3s;
-    transition: all .3s;
   }
   .open .aside {
     -webkit-transform: translateX(0px);
